@@ -11,11 +11,11 @@
 
 console.log('ejercicio 3') //no quitar este console.log, empezar debajo el ejercicio
 
-let parametro = prompt("que operacion desea realizar? || sumar || restar|| ") // pedir el parametro
+let signo = prompt("que operacion desea realizar? || sumar || restar|| ") // pedir el parametro
+let numero1 = prompt("Introduzca el Primer numero para la Operacion");
+let numero2 = prompt("Introduzca el Segundo numero para la Operacion");
 
-function calculadora(signo) {
-    let numero1 = prompt("Introduzca el Primer numero para la Operacion");
-    let numero2 = prompt("Introduzca el Segundo numero para la Operacion");
+function calculadora(signo, numero1, numero2) {
 
     if (signo === "sumar") {
         resto = parseFloat(numero1) + parseFloat(numero2);
@@ -37,4 +37,4 @@ function calculadora(signo) {
 
 }
 
-calculadora(parametro);
+calculadora(signo, numero1, numero2);
