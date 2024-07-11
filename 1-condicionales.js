@@ -12,3 +12,19 @@
  */
 
 console.log('ejercicio 1') //no quitar este console.log, empezar debajo el ejercicio
+
+
+let operación = prompt("Que operacion desea Realizar || Sumar (+) || Restar(-) || Multiplicacion(*) || Dividir(/) ||")
+
+// si la variable operacion es igual a el simbolo + o a la parabla sumar hace la operacion
+if (operación === "+" || operación === "sumar") {
+    console.log("sumar");
+} else if (operación === "-" || operación === "restar") {
+    console.log("Restar");
+} else if (operación === "*" || operación === "multiplicar") {
+    console.log("Multiplicar");
+} else if (operación === "/" || operación === "dividir") {
+    console.log("Dividir");
+} else {
+    console.log("Lo siento no conozco esa operacion");
+}
